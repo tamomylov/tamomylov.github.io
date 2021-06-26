@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+}
+
+body{
+    background-color: rgb(253, 238, 241);
+}
+
+.container{
+    margin: 30px;
+}
+
+.row {  
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .row{   
+        flex-direction: column;
+    }
+}
+
+.textos{
+    width: 100%;
+}
+
+.imagens{
+    width: 100%;
+    justify-self: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.imagem{
+    width: 300px;
+    height: 300px;
+}
