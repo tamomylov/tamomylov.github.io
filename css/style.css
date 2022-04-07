@@ -1,45 +1,72 @@
-*{
-    margin: 0;
-    font-family: 'Brush Script MT', cursive;
-}
-
 body{
-    background-color: rgb(253, 238, 241);
+    background-color: rgb(228, 228, 228);
 }
 
 .container{
-    margin: 30px;
+    width: 92%;
+    padding: 2%;
 }
 
-.row {  
+.contract{
+    background-color: white;
+    box-shadow: 0px 0px 31px 7px rgba(0,0,0,0.56);
     display: flex;
-    flex-direction: row;
-}
-
-@media screen and (max-width: 700px) {
-    .row{   
-        flex-direction: column;
-    }
-}
-
-.textos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 2%;
 }
 
-.imagens{
+.contract .texts{
     width: 100%;
-    justify-self: right;
-}
-
-.text-center{
     text-align: center;
 }
 
-.text-right{
-    text-align: right;
+.contract .texts .title{
+    font-size: 3rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;   
 }
 
-.imagem{
-    width: 300px;
-    height: 300px;
+.contract .texts .text{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    list-style-position: inside;
+}
+
+.contract .buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contract .buttons .assinar{
+    border: 0;
+    padding: 30px 50px;
+    background-color: rgb(223, 223, 19);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.contract .buttons .assinar:hover{
+    transform: scale(1.25);
+    background-color: rgb(255, 0, 200);
+    
+}
+
+.contract .obs{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: 0.60rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    list-style-position: inside;
 }
